@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="fast">
+    <input type="number" id="second">
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Divide</button>
+</body>
+<script>
+    let fastNumber=document.getElementById("fast")
+    let secondNumber=document.getElementById("second")
+    function add()
+    {
+        let store1=Number(fastNumber.value) + Number( secondNumber.value)
+        console.log(store1)
+    }
+    function sub()
+    {
+        let store2=fastNumber.value - secondNumber.value
+        console.log(store2)
+    }
+    function mul()
+    {
+        let store3=fastNumber.value * secondNumber.value
+        console.log(store3)
+    }
+    function div()
+    {
+        let store4=fastNumber.value / secondNumber.value
+        console.log(store4)
+    }
+</script>
+</html>
